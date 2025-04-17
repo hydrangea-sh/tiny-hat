@@ -12,27 +12,29 @@ modules:
       - source: system
         destination: /
 
-  # - type: brew
-  #   brew-analytics: false
-  #   auto-update: true
-  #   auto-upgrade: true
-  #   nofile-limits: true
-
   - type: rpm-ostree
+    repos:
+      - asus.repo # installs ~/files/rpm-ostree/asus.repo
+    install:
+      - asusctl
+      - supergfxctl
     remove:
       - firefox
       - firefox-langpacks
       - nvtop
       - htop
       - gnome-tour
-      - gnome-help
+
+  - type: bling
+    install:
+      - 1password
 
   - type: default-flatpaks
-    notify: true
     system:
       install:
         - app.zen_browser.zen
         - com.valvesoftware.Steam
+        - com.discordapp.Discord
         - dev.zed.Zed
 
   - type: signing
