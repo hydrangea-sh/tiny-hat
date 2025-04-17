@@ -23,12 +23,15 @@ modules:
       - firefox
       - firefox-langpacks
       - nvtop
+      - htop
+      - gnome-tour
+      - gnome-help
 
   - type: default-flatpaks
     notify: true
     system:
       install:
-        - org.mozilla.firefox
+        - app.zen_browser.zen
         - com.valvesoftware.Steam
         - dev.zed.Zed
 
