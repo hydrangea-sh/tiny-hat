@@ -4,7 +4,7 @@ name: tiny-hat
 description: This is my personal OS image.
 
 base-image: ghcr.io/ublue-os/silverblue-nvidia
-image-version: latest
+image-version: 41
 
 modules:
   - type: files
@@ -12,11 +12,11 @@ modules:
       - source: system
         destination: /
 
-  - type: brew
-    brew-analytics: false
-    auto-update: true
-    auto-upgrade: true
-    nofile-limits: true
+  # - type: brew
+  #   brew-analytics: false
+  #   auto-update: true
+  #   auto-upgrade: true
+  #   nofile-limits: true
 
   - type: rpm-ostree
     remove:
