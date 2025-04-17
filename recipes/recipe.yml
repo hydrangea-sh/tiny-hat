@@ -17,6 +17,7 @@ modules:
       - asus.repo # installs ~/files/rpm-ostree/asus.repo
     install:
       - asusctl
+      - asusctl-rog-gui
       - supergfxctl
 
     remove:
