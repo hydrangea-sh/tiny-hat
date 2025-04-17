@@ -28,6 +28,7 @@ modules:
   - type: bling
     install:
       - 1password
+      - gnome-vrr
 
   - type: default-flatpaks
     system:
