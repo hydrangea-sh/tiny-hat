@@ -18,17 +18,13 @@ modules:
     install:
       - asusctl
       - supergfxctl
+
     remove:
       - firefox
       - firefox-langpacks
       - nvtop
       - htop
       - gnome-tour
-
-  - type: bling
-    install:
-      - 1password
-      - gnome-vrr
 
   - type: default-flatpaks
     system:
