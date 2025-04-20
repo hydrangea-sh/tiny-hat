@@ -1,5 +1,5 @@
 [copr:copr.fedorainfracloud.org:lukenukem:asus-kernel]
-name=Copr repo for asus-linux owned by lukenukem
+name=Copr repo for asus-kernel owned by lukenukem
 baseurl=https://download.copr.fedorainfracloud.org/results/lukenukem/asus-kernel/fedora-$releasever-$basearch/
 type=rpm-md
 skip_if_unavailable=True
