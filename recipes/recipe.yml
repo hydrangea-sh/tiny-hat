@@ -26,6 +26,8 @@ modules:
       - nvtop
       - htop
       - gnome-tour
+  - type: akmods
+  install: nvidia
 
   - type: default-flatpaks
     system:
