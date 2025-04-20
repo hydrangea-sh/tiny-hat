@@ -14,7 +14,7 @@ modules:
 
   - type: rpm-ostree
     repos:
-      - asus.repo # installs ~/files/rpm-ostree/asus.repo
+      - asus.repo # installs ~/files/rpm-ostree/asus-linux.repo
     install:
       - asusctl
       - asusctl-rog-gui
