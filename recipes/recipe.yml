@@ -14,11 +14,13 @@ modules:
 
   - type: rpm-ostree
     repos:
-      - asus-linux.repo # installs ~/files/rpm-ostree/asus-linux.repo
+      - asus-linux.repo
+      - asus-kernel.repo
     install:
       - asusctl
-      - asusctl-rog-gui
       - supergfxctl
+      - kernel-rog-cachyos
+      - kernel-rog-cachyos-devel-matched
 
     remove:
       - nvtop
